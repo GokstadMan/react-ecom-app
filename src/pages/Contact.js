@@ -1,11 +1,12 @@
 import React from 'react'
-import ContactImage from "../images/contact.jpg"
+import NotFound from "../images/nothing here.gif";
+
 
 function Contact() {
   return (
     <div>
       <h1 className='text-6xl'>Contact</h1>
-      <img src={ContactImage} alt="contact" />
+      <img src={NotFound} alt="notFound" />
     </div>
   )
 }
