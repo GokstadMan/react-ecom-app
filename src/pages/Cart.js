@@ -1,13 +1,11 @@
 import React from 'react';
-import PriceImage from"../images/prices.jpg";
 
-function Prices() {
+function Cart() {
   return (
     <div>
       <h1 className='text-6xl'>Cart</h1>
-      <img src={PriceImage} alt="prices" />
     </div>
   )
 }
 
-export default Prices
+export default Cart
