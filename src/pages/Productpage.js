@@ -4,7 +4,7 @@ import CartContext from '../components/Context/CartContext';
 
 function Productpage() {
 
-    const { id } = useParams();
+    const {id} = useParams();
     const[product,setProduct] = useState({});
 
     const[cart,setCart] = useContext(CartContext);
@@ -14,7 +14,9 @@ function Productpage() {
     }
 
     useEffect(() => {
+        
         async function fetchProduct(){
+
             await fetch("https://play-ecom-api.allcodeapp.com/api/products/" + id)
             .then(async(data)=> {
                 const response = await data.json();
