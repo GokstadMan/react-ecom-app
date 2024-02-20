@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import{ Link } from "react-router-dom";
 import CartContext from './Context/CartContext';
 
-
 function Navbar() {
 
   const[cart,setCart] = useContext(CartContext);

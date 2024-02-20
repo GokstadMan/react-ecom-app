@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import CartContext from "../components/Context/CartContext";
+import {ReactTyped} from "react-typed";
 
 function Cart() {
 
@@ -8,6 +9,7 @@ function Cart() {
   return (
     <div className="mx-20 my-8">
       <h1 className="mb-6 font-semibold text-4xl">Cart</h1>
+      <ReactTyped className="flex justify-center text-3xl bg-gray-200 text-rose-500 text-center" strings={['Ben','Tone Merete','Milla']} typeSpeed={140} backSpeed={120} loop/>
       <div className="flex flex-col gap-6 p-4 bg-gray-200">
         {!(cart.length>0) ? "Nothing in Cart" : null}
         {cart.map((cartItem,index) => (
